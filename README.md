@@ -41,7 +41,7 @@ When you plug the data pin into an available GPIO pin, you can turn the on at Fu
 ```php
 use ScrapyardIO\Actuation\SystemFans\Adapters\GPIOFanAdapter;
 
-// On RPi 4, 5 and Zero2, the main PWM Chip is 4. This fan is plugged into GPIO 6 which maps to \
+// On RPi 4, 5 and Zero2, the main PWM Chip is 4. This fan is plugged into GPIO 6 which maps to 
 // physical pin 31.
 $fan = (new GPIOFanAdapter())->chip(4)->line(6);
 
@@ -97,8 +97,9 @@ use ScrapyardIO\Actuation\SystemFans\Adapters\PWMFanAdapter;
 
 // This fan is plugged into PWMChip 0 broadcasting on Channel 0 which maps to
 // physical pin 32 on an RPi 4, 5 and Zero2
-// This tachometer is plugged into PWMChip 0 broadcasting on Channel 0 which maps to
-// physical pin 32 on an RPi 4, 5 and Zero2
+
+// On RPi 4, 5 and Zero2, the main PWM Chip is 4. This tachometer is plugged into GPIO 6 which maps to 
+// physical pin 31.
 
 $noctua_fan = (new PWMFanAdapter())->chip(0)->channel(0)->tach(4, 6);
 
