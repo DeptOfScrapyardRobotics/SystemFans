@@ -2,9 +2,8 @@
     "name": "dept-of-scrapyard-robotics/system-fans",
     "description": "ScrapyardIO Framework extension library that enabled PWM and GPIO Control of Fans on Linux",
     "type": "library",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "keywords": [
-        "laravel",
         "io",
         "linux",
         "embedded",

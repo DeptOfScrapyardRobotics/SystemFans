@@ -3,8 +3,9 @@
 namespace ScrapyardIO\Actuation\SystemFans\Adapters;
 
 use ScrapyardIO\Actuation\SystemFans\Concerns\GPIOTachometer;
+use ScrapyardIO\Actuation\Contracts\Actuation\ScrapyardActuator;
 
-abstract class SystemFanAdapter
+abstract class SystemFanAdapter extends ScrapyardActuator
 {
     use GPIOTachometer;
 
